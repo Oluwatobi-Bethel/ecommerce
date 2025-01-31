@@ -1,0 +1,249 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+  }
+  
+  body {
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  
+  /* Navbar Styling */
+  .nav-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: 20px 0;
+    border-bottom: 1px solid hsl(220, 14%, 75%);
+  }
+  
+  .nav-item {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  /* .nav-item li a {
+    text-decoration: none;
+    color: hsl(220, 13%, 13%);
+    font-size: 16px;
+    font-weight: 700;
+  } */
+
+  .nav-item li a {
+    text-decoration: none;
+    color: hsl(220, 13%, 13%);
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px;
+    transition: 0.3s ease;
+}
+
+.nav-item li a:hover {
+    color: hsl(26, 100%, 55%);
+    border-bottom: 2px solid hsl(26, 100%, 55%);
+}
+
+  
+  .nav-item li img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+  }
+  .hero-textbox p:nth-child(3) {
+    text-decoration: line-through;
+    color: hsl(220, 14%, 75%);
+}
+
+
+  .hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    width: 80%;
+    max-width: 1100px;
+}
+
+  
+  .hero-image img {
+    width: 400px;
+    border-radius: 10px;
+  }
+  
+  .product-images {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .product-images img {
+    width: 80px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px solid transparent;
+  }
+  
+  .product-images img:hover {
+    border: 2px solid hsl(26, 100%, 55%);
+  }
+  
+  .hero-textbox {
+    max-width: 400px;
+  }
+  
+  .hero-textbox h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: hsl(26, 100%, 55%);
+  }
+  
+  .hero-textbox h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 10px 0;
+    color: hsl(220, 13%, 13%);
+  }
+  
+  .hero-description {
+    font-size: 16px;
+    color: hsl(219, 9%, 45%);
+    line-height: 1.6;
+  }
+  
+  .hero-textbox div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .hero-textbox p {
+    font-size: 20px;
+    font-weight: 700;
+    color: hsl(220, 13%, 13%);
+  }
+  
+  .hero-textbox p:nth-child(2) {
+    background: hsl(0, 0%, 0%);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .hero-textbox p:nth-child(3) {
+    text-decoration: line-through;
+    color: hsl(220, 14%, 75%);
+  }
+  
+  .old-price {
+    text-decoration: line-through;
+    color: hsl(220, 14%, 75%);
+}
+
+.price-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.discount {
+    background: hsl(0, 0%, 0%);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.add-to-cart {
+    background: hsl(26, 100%, 55%);
+    color: white;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.add-to-cart:hover {
+    opacity: 0.8;
+}
+
+  /* Cart Section */
+  span {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  span:first-of-type {
+    background: hsl(223, 64%, 98%);
+    color: hsl(220, 13%, 13%);
+  }
+  
+  span:last-of-type {
+    background: hsl(26, 100%, 55%);
+    color: white;
+    padding: 12px 30px;
+  }
+
+  .quantity-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity-container button {
+    background: hsl(220, 13%, 13%);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#cart-count {
+    background: hsl(26, 100%, 55%);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+    }
+
+    .hero-image img {
+        width: 100%;
+    }
+
+    .price-container {
+        justify-content: center;
+    }
+}
+
+  

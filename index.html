@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  
+  <title>Frontend Mentor | E-commerce product page</title> 
+</head>
+<body>
+<header>
+  <nav class="nav-head">
+    <img src="./images/logo.svg" alt="written logo in form of text">
+
+    <ul class="nav-item">
+  <li><a href="#">Collections</a></li>
+  <li><a href="#">Men</a></li>
+  <li><a href="#">Women</a></li>
+  <li><a href="#">About</a></li>
+  <li><a href="#">Contact</a></li>
+  <li><a href="#"><img src="./images/icon-cart.svg" alt=""></a></li>
+  <li><a href="#"><img src="./images/image-avatar.png" alt=""></a></li></p>
+    </ul>
+  </nav>
+  </header>
+
+  <main>
+  <section class="hero-section">
+  <div class="hero-image">
+  <img src="./images/image-product-1.jpg" alt="sneakers in display">
+  </div>
+  <div class="product-images">
+    <img src="./images/image-product-1-thumbnail.jpg" alt="sneakers in display">
+    <img src="./images/image-product-2-thumbnail.jpg" alt="sneakers in display">
+    <img src="./images/image-product-3-thumbnail.jpg" alt="sneakers in display">
+    <img src="./images/image-product-4-thumbnail.jpg" alt="sneakers in display">
+  </div>
+
+
+<div class="hero-textbox"> 
+  <h3>Sneaker Company</h3>
+  <h1>Fall Limited Edition Sneakers</h1>
+  <p class="hero-description">
+  These low-profile sneakers are your perfect casual wear companion. Featuring a 
+  durable rubber outer sole, they’ll withstand everything the weather can offer.
+  </p>
+
+<div class="price-container">
+  <p>$125.00</p>
+  <span class="discount">50%</span>
+  <p class="old-price">$250.00</p>
+</div>
+<div class="quantity-container">
+  <button id="decrease">-</button>
+  <span id="quantity">0</span>
+  <button id="increase">+</button>
+</div>
+<button id="add-to-cart" class="add-to-cart">Add to cart</button>
+<span id="cart-count" style="display: none;">0</span>
+
+  </section>
+  </main>
+</body>
+<script src="./script.js"></script>
+</html>
